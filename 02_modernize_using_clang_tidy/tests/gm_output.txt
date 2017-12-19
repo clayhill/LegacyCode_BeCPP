@@ -1,0 +1,54 @@
+Hello, BeCPP!
+Let's go over the examples:
+run_avoid_bind
+    lambda(5) = 15
+run_loop_convert
+    iterate over array: [1,2,3,4,5,]
+    iterate over vector using iterator: [1,2,3,]
+    iterate over vector using simple for loop: [1,2,3,]
+    iterate over vector using iterator (modify vector; evaluate end() only once): [1,2,3,1,]
+run_make_shared_and_make_unique
+    my shared pair: (1,2)
+    my other shared pair: (3,4)
+    my unique pair: (5,6)
+    my other unique pair: (7,8)
+run_pass_by_value
+  Foo constructor
+    copied=/current/working/dir
+    read_only=/some/path
+run_raw_string_literal
+  quotes: embedded "quotes"
+  paragraph: [Line one.
+Line two.
+Line three.
+]
+  single_line: [Single line.
+]
+  trailing_space: [Look here -> 
+]
+  tab: [One	Two
+]
+  bell: Hello!  And welcome!
+  path: C:\Program Files\Vendor\Application.exe
+  regex: \w\([a-z]\)
+run_shrink_to_fit
+Original vector
+  size: 1000
+  capacity: 1000
+Modified vector
+  size: 500
+  capacity: 1000
+Resized vector
+  size: 500
+  capacity: 500
+run_use_auto
+  vector: 1, 2, 3, 
+  map: {123, foo}, {456, bar}, 
+  new string: foobar
+  foo=1, bar=1
+run_use_default_member_init
+  foo.i=5, foo.j=10
+  bar.i=2, bar.j=10
+run_use_emplace
+  vector v: [aaaaaaaaaa]
+  vector w: [(21,37),(21,37)]
